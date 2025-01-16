@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework OSINT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        .category {
+            margin: 20px 0;
+            cursor: pointer;
+            background-color: #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .category:hover {
+            background-color: #aaa;
+        }
+        .subcategory {
+            margin-left: 20px;
+            display: none;
+        }
+        .subcategory ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .subcategory li {
+            margin: 5px 0;
+        }
+        .subcategory a {
+            text-decoration: none;
+            color: #333;
+        }
+        .subcategory a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Framework OSINT</h1>
+
+    <div class="category" onclick="toggleSubcategory('hacking')">
+        Hacking
+    </div>
+    <div id="hacking" class="subcategory">
+        <h3>Verificação de Vazamentos</h3>
+        <ul>
+            <li><a href="https://breachdirectory.org/" target="_blank">Breached Directory</a></li>
+            <li><a href="https://doxbin.org/" target="_blank">Doxbin</a></li>
+            <li><a href="https://breach.vip/" target="_blank">Breach.vip</a></li>
+            <li><a href="https://pastebin.com/" target="_blank">Pastebin</a></li>
+        </ul>
+        <h3>Ferramentas de Hacking</h3>
+        <ul>
+            <li><a href="https://hackertarget.com/" target="_blank">HackerTarget</a></li>
+            <li><a href="https://subdomainfinder.c99.nl/" target="_blank">Subdomain Finder</a></li>
+            <li><a href="https://grabify.link/" target="_blank">Grabify</a></li>
+            <li><a href="https://www.wigle.net/" target="_blank">WiGLE</a></li>
+            <li><a href="https://nikto.online/" target="_blank">Nikto</a></li>
+            <li><a href="https://ipinfo.io/" target="_blank">IPinfo</a></li>
+            <li><a href="https://dnsdumpster.com/" target="_blank">DNS Dumpster</a></li>
+            <li><a href="https://donodozap.com/" target="_blank">Donodozap</a></li>
+            <li><a href="https://www.wappalyzer.com/lookup/pedal.com.br/" target="_blank">Wappalyzer</a></li>
+        </ul>
+    </div>
+
+    <div class="category" onclick="toggleSubcategory('ai')">
+        Inteligências Artificiais
+    </div>
+    <div id="ai" class="subcategory">
+        <h3>Ferramentas de IA</h3>
+        <ul>
+            <li><a href="https://flowgpt.com/chat/chatgpt-uncensored" target="_blank">FlowGPT</a></li>
+            <li><a href="https://nofiltergpt.com/chat" target="_blank">NoFilterGPT</a></li>
+            <li><a href="https://duckduckgo.com/?q=%242a%2410%24tSRd5NCCRz056IWx.MuJ%2F.yGYsIhOGcX4ohlt6Za2zdNd1sb0iOkW&t=opera&ia=chat&prompt=1" target="_blank">DuckDuckGo IA</a></li>
+            <li><a href="https://flowgpt.com/chat/wormgpt-6" target="_blank">WormGPT</a></li>
+        </ul>
+    </div>
+
+    <div class="category" onclick="toggleSubcategory('tutorials')">
+        Tutoriais
+    </div>
+    <div id="tutorials" class="subcategory">
+        <ul>
+            <li><a href="https://pt.anotepad.com/notes/a5jeckia" target="_blank">Tutorial 1</a></li>
+            <li><a href="https://pt.anotepad.com/notes/87jqe52j" target="_blank">Tutorial 2</a></li>
+            <li><a href="https://pt.anotepad.com/notes/sg2yhrwd" target="_blank">Tutorial 3</a></li>
+            <li><a href="https://pt.anotepad.com/notes/p89wscpj" target="_blank">Tutorial 4</a></li>
+            <li><a href="https://pt.anotepad.com/notes/ra52i7bw" target="_blank">Tutorial 5</a></li>
+        </ul>
+    </div>
+
+    <div class="category" onclick="toggleSubcategory('etc')">
+        Etc
+    </div>
+    <div id="etc" class="subcategory">
+        <ul>
+            <li><a href="https://coggle.it/?org=0" target="_blank">Coggle</a></li>
+            <li><a href="https://cryptii.com/" target="_blank">Cryptii</a></li>
+            <li><a href="https://blog.inurl.com.br/" target="_blank">Blog InURL</a></li>
+            <li><a href="https://cse.google.com/cse?cx=9789539df93384c7b#gsc.tab=0" target="_blank">Google Custom Search</a></li>
+            <li><a href="https://weboproxy.com/" target="_blank">Weboproxy</a></li>
+            <li><a href="https://www.browserling.com/" target="_blank">Browserling</a></li>
+        </ul>
+    </div>
+
+    <div class="category" onclick="toggleSubcategory('osint')">
+        OSINT
+    </div>
+    <div id="osint" class="subcategory">
+        <h3>CC</h3>
+        <ul>
+            <li><a href="https://srwatson.io/" target="_blank">SR Watson</a></li>
+            <li><a href="https://www.spydialer.com/default.aspx" target="_blank">SpyDialer</a></li>
+        </ul>
+        <h3>Tudo</h3>
+        <ul>
+            <li><a href="https://www.spydialer.com/default.aspx" target="_blank">SpyDialer</a></li>
+            <li><a href="https://www.tellows.com.br/s/help-br/pesquisa-retrograda?num=04888088727" target="_blank">Tellows</a></li>
+            <li><a href="https://whocalld.com/" target="_blank">WhoCall'd</a></li>
+            <li><a href="https://donodozap.com/" target="_blank">Donodozap</a></li>
+            <li><a href="https://www.truecaller.com/search/br/51994584385" target="_blank">Truecaller</a></li>
+            <li><a href="https://www.numberingplans.com/?page=analysis&sub=phonenr" target="_blank">NumberingPlans</a></li>
+            <li><a href="https://freecarrierlookup.com/" target="_blank">Free Carrier Lookup</a></li>
+            <li><a href="https://buscaprime.com.br/consulta.php" target="_blank">Buscaprime</a></li>
+            <li><a href="https://life-scan.info/" target="_blank">Life-Scan</a></li>
+        </ul>
+        <ul>
+            <li><a href="https://freecarrierlookup.com/index.php" target="_blank">Free Carrier Lookup (2)</a></li>
+            <li><a href="https://picarta.ai/" target="_blank">Picarta</a></li>
+            <li><a href="https://xdocz.com.br/" target="_blank">Xdocz</a></li>
+            <li><a href="https://www.intelius.com/" target="_blank">Intelius</a></li>
+            <li><a href="https://osintframework.com/" target="_blank">OSINT Framework</a></li>
+            <li><a href="https://dnsdumpster.com/" target="_blank">DNS Dumpster</a></li>
+            <li><a href="https://search.onyphe.io/" target="_blank">Onyphe</a></li>
+        </ul>
+    </div>
+
+    <div class="category" onclick="toggleSubcategory('laboratories')">
+        Laboratórios
+    </div>
+    <div id="laboratories" class="subcategory">
+        <ul>
+            <li><a href="http://www.vulnweb.com/" target="_blank">Vulnweb</a></li>
+            <li><a href="https://demo.owasp-juice.shop/#/" target="_blank">OWASP Juice Shop</a></li>
+            <li><a href="https://www.vulnhub.com/" target="_blank">Vulnhub</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleSubcategory(categoryId) {
+            const subcategory = document.getElementById(categoryId);
+            if (subcategory.style.display === "none" || subcategory.style.display === "") {
+                subcategory.style.display = "block";
+            } else {
+                subcategory.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
